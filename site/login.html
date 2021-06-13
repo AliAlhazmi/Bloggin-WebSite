@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+
+<body class = "center">
+    <div class="navbar">
+        <ul>
+          <span><a class ="navbarLinks" href = "index.html"><li>Home</li></a> </span>
+           <span><a href = "login.html"><li>AdminView</li></a>     </span>
+        </ul>
+    </div>
+
+
+    <div class="content"> <p></p>
+        <!-- 
+        <div class="post">
+            User Name: <input type="text" class ="button"> <br>
+            Password : <input type="password">
+        </div>
+        <br> <br> -->
+        
+        
+        
+        <div class="loginbox">
+			<h1>Login</h1>
+			<form> <!-- action="index.html" -->
+				<p>Username</p>
+				<input type="text" id="uname" placeholder="Enter Username">
+				<p>Password</p>
+				<input type="password" id="pwd" placeholder="Enter Password">
+				<input type="submit" name="" value="Login" onclick = "valdiate();return false ">
+                <!-- return false to prevent the form redirction, 
+                     there are better solutions than this but it works anyways... -->
+				<a href="index.html">Not an admin?</a>
+				
+			</form>
+			
+		</div>
+    </div>
+
+       <!-- FOOTER FROM BOOTSTRAP -->
+       <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Qute me Blogsite Made by Ali</span>
+        </div>
+      </footer>
+      <!-- FOOTER FROM BOOTSTRAP -->
+
+    
+    
+</body>
+
+<script>
+    window.alert("username and password: admin");
+    function valdiate()
+    {
+        let userName = document.getElementById("uname").value;
+        let password = document.getElementById("pwd").value;
+        
+        if(userName == "admin" && password == "admin")
+        {
+            
+            window.location.replace("adminpage.html");
+            
+
+        }
+       else
+       {
+            window.alert("fail")
+       } 
+    }
+
+</script>
+
+</html>

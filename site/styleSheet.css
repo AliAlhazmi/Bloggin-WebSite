@@ -1,0 +1,540 @@
+.center
+{
+    max-width: 870px;
+    margin: auto;
+    width: 90%;
+}
+html
+{
+    background-color: rgb(27, 30, 31);
+    font-family: consolas;
+}
+
+p
+{
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+
+}
+.header
+{
+    background-color: rgb(47, 49, 54);
+   /* border: dotted 1px black;  */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header img
+{
+    width: 250px; 
+}
+
+
+
+.colors
+{
+    background-color: rgb(27, 30, 31);
+    background-color: #7289da;
+    background-color: #23272a;
+    background-color: #2c2f33;
+    
+    
+    
+}
+.container /*footer styles */
+{
+    background-color: rgb(52, 152, 219);
+    min-height: 4ch;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+.content
+{
+   /* border: dotted 1px black;  */
+    min-height: 900px;
+    background-color: #23272a;
+}
+
+/* --- side bar --- */
+@media only screen and (max-width: 1150px) {
+    #fadeshow1 {
+        display: none;
+    }
+}
+table
+{
+    width: 11ch;
+}
+table,th
+{
+
+    border: 1px solid #7289da;
+    color: white;;
+    background-color: #23272a; ;
+}
+.sideInfo
+{
+    position: fixed;
+    /* left: 85%; replaced so the sideinfo wont move in small views */
+    left: 1%;
+    top: 13%;
+
+}
+.sideInfo2
+{
+    position: fixed;
+    /* left: 85%; replaced so the sideinfo wont move in small views */
+    left: 1%;
+    top: 45%;
+
+}
+.sideAd
+{
+    position: fixed;
+    /* left: 85%; replaced so the sideinfo wont move in small views */
+    right: 2%;
+    top: 10%;
+
+}
+.sideAd2
+{
+    position: fixed;
+    /* left: 85%; replaced so the sideinfo wont move in small views */
+    right: 2%;
+    top: 55%;
+
+}
+td{
+    color:white;
+    text-align: center;
+    padding: 2px
+}
+.rightLine /* added in tables */
+{
+    border-right: 1px solid #7289da;
+}
+/* side bar*/
+.content span
+{
+    color:rgb(52, 152, 219);
+    font-size: 24px;
+    padding-top: 3ch;
+    text-align: center;
+    display: block;
+}
+/* --- Adming --- */
+.post
+{
+    margin: auto;
+    margin-top: 2ch;
+    padding: 2ch;
+    
+    width: 85%;
+    min-height: 10ch;
+    /* border: dotted 1px black;  */
+    background-color: #2c2f33;
+    color: white;
+    
+}
+.post h3
+{
+    
+    text-align: center;
+    margin-bottom: 0ch;
+    font-size: 22px;
+    color:rgb(52, 152, 219);
+    
+    
+}
+.post img
+{
+    height: 300px;
+    width: 700px;
+
+}
+body
+{
+    overflow: auto;
+}
+/* --- ScrollBar --- */
+body::-webkit-scrollbar
+{
+    width: 0.33rem;
+}
+body::-webkit-scrollbar-track
+{
+       background-color: rgb(27, 30, 31);
+}
+body::-webkit-scrollbar-thumb
+{
+    background:  rgb(52, 152, 219);
+}
+/* --- ScrollBar --- */
+
+
+/* --- NavBar --- */
+.navbar
+{
+    background-color: rgb(52, 152, 219);
+    color: white;
+    border: dotted 1px rgba(0, 0, 0, 0);
+    min-height: 50px;
+    margin-top: 0%;
+    font-family: consolas ;
+
+    
+}
+.navbar ul
+{
+    text-align: center;
+}
+.navbar li
+{
+    display: inline;
+    text-align: center;
+    
+    
+
+}
+.navbar a
+{
+    text-decoration:none ;
+}
+.navbar a:hover
+{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar a:visited
+{
+    color: white;
+}
+.navbar span
+{
+    word-spacing:10px;
+}
+.nabvarLinks
+{
+    color:black
+}
+
+/* --- NavBar --- */
+
+
+/* --- for AdminPage --- */
+ul
+{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    
+    
+
+}
+
+/* --- postbox ---*/
+.postbox{
+    width: 85%;
+    height: 530px;
+    background-color: #2c2f33;
+    color: #fff;
+   /* top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-60%,-50%); */
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px ;
+    
+}
+
+/*.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+} */
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.postbox p{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.postbox input{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.postbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.postbox textarea
+{
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    height: 17%;
+    width: 90%;
+    
+    margin: auto;
+    
+}
+.postbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    margin-top: 1ch;
+    width: 14ch;
+    background: rgb(52, 152, 219);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.postbox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    margin-top: 1ch;
+    width: 14ch;
+    background: rgb(52, 152, 219);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.postbox input[type="button"]:hover
+{
+    cursor: pointer;
+    background: rgba(114, 137, 218, 0.7);
+    color: #000;
+}
+.postbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: rgba(114, 137, 218, 0.7);
+    color: #000;
+}
+.postbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: rgba(114, 137, 218, 0.7);
+    color: #000;
+}
+
+.postbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.postbox a:hover
+{
+    color: rgba(114, 137, 218, 0.7);
+}
+
+/* --- loginbox ---*/
+.center
+{
+    max-width: 870px;
+    margin: auto;
+    width: 90%;
+}
+html
+{
+    background-color: rgb(27, 30, 31);
+}
+
+
+
+.colors
+{
+    background-color: rgb(27, 30, 31);
+    background-color: #7289da;
+    background-color: #23272a;
+    background-color: #2c2f33;
+    
+    
+}
+
+.button
+{
+    color: white;
+    background-color: #23272a;
+}
+
+.content
+{
+    border: dotted 1px black;
+    min-height: 900px;
+    background-color: #23272a;
+}
+
+.post
+{
+    color:white;
+    border: dotted 1px black;
+    background-color: #2c2f33;
+    
+}
+
+
+/* --- NavBar --- */
+.navbar
+{
+    background-color: rgb(52, 152, 219);
+    color: white;
+    border: dotted 1px rgba(0, 0, 0, 0);
+    min-height: 50px;
+
+    
+}
+.navbar ul
+{
+    text-align: center;
+}
+.navbar li
+{
+    display: inline;
+    text-align: center;
+    
+    
+
+}
+.navbar a
+{
+    text-decoration:none ;
+    color: white;
+    
+}
+.navbar a:hover
+{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar a:visited
+{
+    color: white;
+}
+.navbar span
+{
+    word-spacing:10px;
+}
+.nabvarLinks
+{
+    color:black
+}
+/* --- NavBar --- */
+
+
+/* --- loginbox ---*/
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background-color: #2c2f33;
+    color: #fff;
+   /* top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%); */
+    box-sizing: border-box;
+    margin: auto;
+    padding: 70px 30px;
+}
+
+/*.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+} */
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(52, 152, 219);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: rgba(52, 152, 219, 0.7);
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: rgba(114, 137, 218, 0.7);
+}
+/* --- loginbox ---*/
+
+
+
+
+
+
+
+
+
+
+
+

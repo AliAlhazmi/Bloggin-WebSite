@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+</head>
+
+<body class = "center">
+  <div class="navbar">
+        <ul>
+          <span><a class ="navbarLinks" href = "index.html"><li>Home</li></a> </span>
+           
+           <span><a href = "login.html"><li>AdminView</li></a>     </span>
+        </ul>
+    </div>
+    
+    <div class="header"><img src="logo.png"></div>
+
+    <div class="content"> <span>Recent Posts </span>
+
+
+        <div class="post">
+            
+            <h3>NLP use cases:</h3> <br>
+          
+           <p>1. Information extraction:
+            Goal: Parse the input text to extract valuable output.
+            Examples: Entity extraction, relation identification extraction, text
+            summarization</p>
+           <p> 2. Unstructured text: Dynamic structure (for example emails, newspaper
+            articles, and user reviews).</p>
+           <p>3. Structured text: Defined structure (for example, a database table)</p>
+            <p>4. Sentiment analysis:The process of identifying emotions or opinions
+             that are expressed in user input.</p>
+            <p>these analysis is used in marketing, retention plans, and emotional
+            intelligence for chatbots.</p>
+            <p>5. Question and answering: Building solutions that can answer
+             questions that are asked by humans in natural language.</p>
+             Examples: Natural language questions used to retrieve answers from
+            forums; FAQ application; chatbots
+           <p>6. Speech recognition: Converts spoken language into text.
+            􀆒 Example: Chatbot interactive talk </p>
+        </div>
+
+        <div class="post">
+           
+            <h3>Chatbots:</h3> <br>
+           <p>A Software that interacts with the user in natural language.</p>
+            <p>The application can have a chat interface, the conversation medium may be in text, speech, or both.</p>
+            <p>Some example applications are customer support, sales activities, or entertainment. </p>
+
+            Chatbots in the industry: <br>
+           <p>Apple Siri, Microsoft Cortana, Google Assistant, and Amazon Alexa:
+            Interact by using natural language and often in the form of speech.
+            Support functions like setting alarms, running searches, and retrieving
+            real-time information like news.</p>
+        </div>
+        
+       
+
+    </div>
+    <!-- SIDE BAR -->
+    <table class ="sideInfo" id = "fadeshow1">
+        <tr>
+            <td colspan="2"> Follow us </td>
+        </tr>
+        <tr> 
+            <td > Twitter: @QuoteMe </td>  
+        </tr>
+        <tr> 
+            <td > YouTube: QuoteMeBL </td>  
+        </tr>
+        <tr> 
+            <td > Insta: @QuoteMe </td>  
+        </tr>
+        
+       </table>
+       <table class ="sideInfo2" id = "fadeshow1">
+        <tr>
+            <td colspan="2"> Schedule: </td>
+        </tr>
+        <tr> 
+            <td > Daily Posts </td>  
+        </tr>
+       
+        
+       </table>
+
+    <table class ="sideAd" id = "fadeshow1">
+        <tr>
+            <td colspan="2">Ad here: </td>
+        </tr>
+        <tr> 
+            <td > <img src = "https://via.placeholder.com/100x200"> </td>  
+        </tr>
+       </table>
+
+       <table class ="sideAd2" id = "fadeshow1">
+        <tr>
+            <td colspan="2">Ad here: </td>
+        </tr>
+        <tr> 
+            <td > <img src = "https://via.placeholder.com/100x200"> </td>  
+        </tr>
+       </table>
+     <!-- SIDE BAR -->
+
+    <!-- FOOTER FROM BOOTSTRAP -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Qute me Blogsite Made by Ali</span>
+        </div>
+      </footer>
+      <!-- FOOTER FROM BOOTSTRAP -->
+    
+</body>
+
+
+<script>
+  
+  
+   printTitle = localStorage.getItem("1");
+    printContent = localStorage.getItem("2");
+    //document.getElementById("eleTitle").innerHTML = printTitle;
+    //document.getElementById("eleCont").innerHTML = printContent;
+    let node = document.createElement("LI");                 // Create a <li> node
+    let textnode = document.createTextNode(printContent); 
+    let titlenode = document.createTextNode(printTitle); 
+    
+    
+   
+    document.getElementById("eleTitle").appendChild(node.appendChild(titlenode));
+    document.getElementById("eleCont").appendChild(node.appendChild(textnode)); 
+
+
+</script>
+</html>
+<!-- crtl z? -->
+
+
+
+
+
